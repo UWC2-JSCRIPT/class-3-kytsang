@@ -31,9 +31,10 @@ const g = function(x){
   return x.split("");
 };
 
-let sum =0;
+
 
 function getTotalPoints(str){
+    let sum =0;  
     g(str).forEach ((item)=>{
     sum +=RESULT_VALUES[item];
 });
