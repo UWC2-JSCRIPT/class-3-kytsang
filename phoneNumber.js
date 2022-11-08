@@ -6,6 +6,11 @@
 // Returns true if valid, false if not valid
 
 
+function testPhoneNumber(x) {
+    let regex1 = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    return regex1.test(x);
+  };
+
 
 // Explanation of RegExp
 // ^      start of line
@@ -30,6 +35,23 @@ console.log(testPhoneNumber('(206) 33-4444')); // should return false, missing a
 // the phone number.
 // Returns an object in the format {areaCode, phoneNumber}
 
+
+
+function phoneArray(x){
+    let regex1 = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    return regex1.exec(x);
+}
+
+function parsePhoneNumber(x){
+    class a {
+        constructor(areaCode, phoneNumber){
+             this.areaCode=areaCode;
+             this.phoneNumber=phoneNumber;
+             }
+    }
+const hW= new a(phoneArray(x)[1], phoneArray(x)[2]+phoneArray(x)[3]);
+  console.log(hW);
+}
 
 
 // Check parsePhoneNumber
