@@ -43,14 +43,14 @@ function phoneArray(x){
 }
 
 function parsePhoneNumber(x){
-    class SpaceShip {
+    class a {
         constructor(areaCode, phoneNumber){
              this.areaCode=areaCode;
              this.phoneNumber=phoneNumber;
              }
     }
-const lexx= new SpaceShip(phoneArray(x)[1], phoneArray(x)[2]+phoneArray(x)[3]);
-  console.log(lexx);
+const hW= new a(phoneArray(x)[1], phoneArray(x)[2]+phoneArray(x)[3]);
+  console.log(hW);
 }
 
 
