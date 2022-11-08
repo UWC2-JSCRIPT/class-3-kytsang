@@ -49,7 +49,6 @@ function getTotalPoints(str){
 };
 */ 
 
-
 // Check getTotalPoints
 console.log(getTotalPoints('wwdl')); // should equal 7
 
